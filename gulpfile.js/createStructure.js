@@ -3,7 +3,7 @@ const fs = require('fs');
 
 function createStructure(cb) {
     console.log("creating structure");
-    const targetDir = __dirname + "/../public/"
+    const targetDir = __dirname + "/../docs/"
     const folders = [
         'css',
         'img',

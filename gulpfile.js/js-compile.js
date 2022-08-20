@@ -16,7 +16,7 @@ function compileJs(cb) {
     // This will cause sourceMaps to use the previous sourcemap to create an ultimate sourcemap
     .pipe(buffer())
     .pipe(uglify())
-    .pipe(gulp.dest("./public/js"))
+    .pipe(gulp.dest("./docs/js"))
     
 }
 

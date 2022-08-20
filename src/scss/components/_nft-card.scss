@@ -1,0 +1,106 @@
+.nft-card {
+
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 320px;
+    background-color: $cardDarkBlue;
+    text-align: left;
+    box-shadow: 0px 0px 30px 10px $bgDarkBlue;
+
+    &__image {
+        width: 100%;
+
+    }
+    &__title {
+        font-size: 1.5rem;
+        color: $white;
+        margin-top: 1.5rem;
+        font-weight: 600;
+    }
+    &__description {
+        font-size: 1rem;
+        color: $softblue;
+        margin-top: 1rem;
+        line-height: 1.5;
+        font-weight: 300;
+        
+    }
+    &__meta {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+        &__price {
+            color: $cyan;
+            font-weight: 400;
+        }
+        &__duration {
+            color: $softblue;
+            font-weight: 400;
+        }
+    }
+    &__icon {
+        width: 16px;
+        margin-right: 0.5rem;
+        &--etherium {
+            width: 13px;
+        }
+        &--clock {
+            width: 24px;
+        }
+    }
+
+    &__view-container {
+        position: relative;
+    border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__view {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($cyan, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+
+    &__seperator {
+        border-color: $lineDarkBlue;
+        margin: 1rem 0rem;
+    }
+    &__avatar {
+        width: 36px;
+        margin-right: 1rem;
+        border: 1px solid $white;
+        border-radius: 50%;
+    }
+    &__creator {
+        color: $softblue;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: $cyan;
+            }
+        }
+        
+    }
+}

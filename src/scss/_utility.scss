@@ -1,0 +1,18 @@
+.main-bg {
+    background-color: $bgDarkBlue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-container {
+    display: flex;
+    align-items: center;
+
+    &--between {
+        justify-content: space-between;
+    }
+}

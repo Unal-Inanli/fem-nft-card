@@ -1,0 +1,28 @@
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+}

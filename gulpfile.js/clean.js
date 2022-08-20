@@ -2,8 +2,8 @@ const fs = require('fs');
 
 
 function clean(cb) {
-    if(fs.existsSync('./public')) {
-        fs.rmSync("./public", { recursive: true, force: true });        
+    if(fs.existsSync('./docs')) {
+        fs.rmSync("./docs", { recursive: true, force: true });        
     }
     cb();
 }

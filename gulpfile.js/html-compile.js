@@ -6,11 +6,11 @@ const bs = require('browser-sync');
 
 function compileHtml(cb) {
 
-        fs.copyFileSync("./src/index.html", "./public/index.html");
+        fs.copyFileSync("./src/index.html", "./docs/index.html");
         
-        return gulp.src("./public/index.html")
-        .pipe(inject(gulp.src(["./public/js/main.js", "./public/css/main.css"], {read: false}), {relative: true}))
-        .pipe(gulp.dest('./public'))
+        return gulp.src("./docs/index.html")
+        .pipe(inject(gulp.src(["./docs/js/main.js", "./docs/css/main.css"], {read: false}), {relative: true}))
+        .pipe(gulp.dest('./docs'))
 }
 
 
