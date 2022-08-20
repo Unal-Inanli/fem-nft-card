@@ -15,13 +15,13 @@
 
     }
     &__title {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         color: $white;
         margin-top: 1.5rem;
         font-weight: 600;
     }
     &__description {
-        font-size: 1rem;
+        font-size: 0.95rem;
         color: $softblue;
         margin-top: 1rem;
         line-height: 1.5;
@@ -37,21 +37,23 @@
         }
         &__price {
             color: $cyan;
-            font-weight: 400;
+            font-weight: 600;
+            font-size: 0.9rem;
         }
         &__duration {
             color: $softblue;
             font-weight: 400;
+            font-size: 0.9rem;
         }
     }
     &__icon {
         width: 16px;
-        margin-right: 0.5rem;
+        margin-right: 0.4rem;
         &--etherium {
-            width: 13px;
+            width: 11px;
         }
         &--clock {
-            width: 24px;
+            width: 18px;
         }
     }
 
@@ -85,13 +87,14 @@
         margin: 1rem 0rem;
     }
     &__avatar {
-        width: 36px;
+        width: 32px;
         margin-right: 1rem;
         border: 1px solid $white;
         border-radius: 50%;
     }
     &__creator {
         color: $softblue;
+        font-size: 0.9rem;
 
         a {
             color: $white;
